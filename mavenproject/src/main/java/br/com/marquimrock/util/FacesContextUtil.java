@@ -5,7 +5,7 @@ import org.hibernate.Session;
 
 public class FacesContextUtil {
 
-    private static final String HIBERNATE_SESSION = "hibernate_sessioin";
+    private static final String HIBERNATE_SESSION = "hibernate_session";
 
     public static Session getRequestSession() {
         return (Session) FacesContext.getCurrentInstance().getExternalContext().getRequestMap().get(HIBERNATE_SESSION);
